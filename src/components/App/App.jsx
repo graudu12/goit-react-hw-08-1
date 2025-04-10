@@ -8,7 +8,7 @@ import { selectTheme } from '../../redux/theme/selectors';
 import { RestrictedRoute } from '../RestrictedRoute';
 import { PrivateRoute } from '../PrivateRoute';
 import AppBar from '../AppBar/AppBar';
-
+import AppFooter from '../AppFooter/AppFooter';
 import ConfirmModal from '../ConfirmModal/ConfirmModal';
 import css from './App.module.css';
 
@@ -68,7 +68,7 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
-
+      <AppFooter />
       <ConfirmModal />
       <Toaster position="top-center" />
     </div>
