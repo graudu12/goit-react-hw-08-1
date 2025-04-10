@@ -1,0 +1,22 @@
+.wrap {
+  display: flex;
+  gap: 24px;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.active {
+  color: var(--link-active);
+}
+
+@media (max-width: 768px) {
+  .link {
+    font-size: 18px;
+  }
+}
