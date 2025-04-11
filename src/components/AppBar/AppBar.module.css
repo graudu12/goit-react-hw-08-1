@@ -1,17 +1,14 @@
-.header {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #2a363b;
-  flex-shrink: 0;
-}
-
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
+  margin-bottom: 16px;
+  padding: 0 50px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  box-shadow: 0px 6px 16px rgba(39, 37, 39, 0.9);
+  color: #141010;
+  background-color: whitesmoke;
 }

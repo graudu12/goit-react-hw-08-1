@@ -1,12 +1,16 @@
-import { Link } from 'react-router-dom';
-import css from './NotFoundPage.module.css';
+import css from "../NotFoundPage/NotFoundPage.module.css";
+
+import { Link } from "react-router-dom";
+
+
 
 export default function NotFoundPage() {
+	
   return (
-    <main className={css.main}>
-      <Link to="/" className={css.link}>
-        Back to HOME
-      </Link>
-    </main>
+    <p className={css.text}>
+      Sorry, page not found! Please go to <Link to="/" className={css.link}> 
+        Home Page!
+      </Link>      
+    </p>
   );
 }

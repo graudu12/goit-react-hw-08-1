@@ -1,60 +1,6 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  --bg-color: linear-gradient(rgba(52, 165, 137, 0.427), #ffffff);
-  --title-color: rgb(51, 101, 88);
-  --button-bg: rgba(52, 165, 137, 0.603);
-  --button-bg-hover: rgba(52, 165, 137, 0.893);
-  --link-active: rgb(51, 101, 88);
-
-  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.15);
-  --border: 2px solid rgb(81, 81, 81);
-}
-
-.theme-green {
-  --bg-color: linear-gradient(rgba(52, 165, 137, 0.427), #ffffff);
-  --title-color: rgb(51, 101, 88);
-  --button-bg: rgba(52, 165, 137, 0.603);
-  --button-bg-hover: rgba(52, 165, 137, 0.893);
-  --link-active: rgb(51, 101, 88);
-}
-
-.theme-blue {
-  --bg-color: linear-gradient(rgba(70, 130, 180, 0.4), #ffffff);
-  --title-color: rgb(28, 78, 128);
-  --button-bg: rgba(70, 130, 180, 0.6);
-  --button-bg-hover: rgba(70, 130, 180, 0.9);
-  --link-active: rgb(28, 78, 128);
-}
-
-.theme-orange {
-  --bg-color: linear-gradient(rgba(255, 165, 0, 0.4), #ffffff);
-  --title-color: rgb(204, 102, 0);
-  --button-bg: rgba(255, 165, 0, 0.6);
-  --button-bg-hover: rgba(255, 165, 0, 0.9);
-  --link-active: rgb(204, 102, 0);
-}
-
-.theme-gray {
-  --bg-color: linear-gradient(rgba(128, 128, 128, 0.5), #ffffff);
-  --title-color: rgb(60, 60, 60);
-  --button-bg: rgba(128, 128, 128, 0.7);
-  --button-bg-hover: rgba(128, 128, 128, 0.9);
-  --link-active: rgb(60, 60, 60);
-}
-
 body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
+  background-color: #680747;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -62,59 +8,32 @@ h2,
 h3,
 h4,
 h5,
-h6,
 p {
   margin: 0;
 }
 
-ul {
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
 button {
-  font-family: inherit;
   cursor: pointer;
-  display: block;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--button-bg);
-  box-shadow: var(--shadow);
-  transition: box-shadow, background-color 0.2s ease;
-}
-
-button:hover,
-button:focus {
-  background-color: var(--button-bg-hover);
-  box-shadow: var(--shadow-hover);
-}
-
-button:active {
-  position: relative;
-  top: 1px;
-}
-
-input {
-  font-family: inherit;
-  width: 100%;
-  padding: 8px;
-  border: var(--border);
-  border-radius: 5px;
-  outline: transparent;
-  background-color: transparent;
 }
 
 img {
-  width: 100%;
-  height: auto;
   display: block;
-}
-
-@media (max-width: 480px) {
-  button {
-    padding: 6px 10px;
-    font-size: 14px;
-  }
+  max-width: 100%;
+  height: auto;
 }

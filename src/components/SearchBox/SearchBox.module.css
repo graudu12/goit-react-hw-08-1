@@ -1,27 +1,27 @@
-.wrapper {
+.container {
+  position: relative;
   width: 100%;
-  margin-bottom: 20px;
-  padding-right: 8px;
-}
-
-.text {
-  font-size: 18px;
-  font-weight: 600;
+  max-width: 300px;
 }
 
 .input {
-  box-shadow: var(--shadow);
+  padding: 10px 20px 10px 40px;
+  width: 100%;
+  border: none;
+  outline: 1px solid transparent;
+  font-size: 16px;
+  border-bottom: 2px solid #141010;
+  background: transparent;
 }
 
-@media (max-width: 768px) {
-  .wrapper {
-    max-width: 100%;
-    padding-right: 0;
-  }
+.iconPosition {
+  position: relative;
 }
 
-@media (max-width: 480px) {
-  .text {
-    font-size: 16px;
-  }
+.inputIcon {
+  position: absolute;
+  left: 5px;
+  top: 100%;
+  transform: translateY(-100%);
+  fill: #2e2f42;
 }

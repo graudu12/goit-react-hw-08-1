@@ -1,12 +1,20 @@
-# React + Vite
+## Phonebook Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description:
+The Phonebook is a modern web application designed to help users manage their contacts. It was developed using advanced web technologies.
 
-Currently, two official plugins are available:
+## Features:
+The app allows users to easily create, edit, and delete contacts, as well as quickly search for specific contacts. It also provides notifications for successful contact addition, editing, or deletion through react-hot-toast.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used:
+The Phonebook was built using React.js with Vite for a fast and interactive user interface. Redux and Redux Toolkit were used for efficient state management, while Redux Persist was used to save the application's state between sessions. Data exchange with the server was handled via Axios and the app's UI was styled using Material UI. Formik was used for form management and data validation, and notifications were displayed using React Hot Toast. The core technologies of HTML and CSS were used for building and styling web pages.
 
-## Expanding the ESLint configuration
+## Development Tools:
+The main development environment for the project was Microsoft Visual Studio Code, with Git for version control. The app was deployed and hosted on Vercel.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Skills Acquired During the Project:
+The project provided the opportunity to develop skills in research, problem solving and analytical thinking.
+
+## Design Patterns:
+Adaptive design for desktop (1440px).
+Various design patterns were applied during the development process to ensure clean and understandable code, as well as to enhance the scalability and maintainability of the project.

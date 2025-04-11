@@ -1,18 +1,24 @@
-import { useSelector } from 'react-redux';
-import { selectFilteredContacts } from '../../redux/contacts/selectors';
-import Contact from '../Contact/Contact';
-import css from './ContactList.module.css';
+import css from "./ContactList.module.css";
+
+import { useSelector } from "react-redux";
+import { selectFilteredContacts } from "../../redux/contacts/selectors.js";
+
+import Contact from "../Contact/Contact.jsx";
+
+
 
 export default function ContactList() {
-  const contacts = useSelector(selectFilteredContacts);
+  const items = useSelector(selectFilteredContacts);
 
   return (
-    <ul className={css.listScroll}>
-      {contacts.map(item => (
-        <li key={item.id} className={css.item}>
-          <Contact item={item} />
-        </li>
-      ))}
-    </ul>
+    <div className={css.wrap}>
+      <ul className={css.menuList}>
+        {items.map((item) => (
+          <li className={css.item} key={item.id}>
+            <Contact item={item} />
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
